@@ -1,0 +1,22 @@
+:root {
+  // Signalisiere, dass die Seite helle und dunkle Darstellung unterstützt.
+  //https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#aa-handling-user-agent-styles
+  color-scheme: light dark;
+
+  // Variablennamen zum Beschreiben der Farbe
+  --poison-green: hsl(109, 85%, 22%);
+  --purple: hsl(269, 19%, 48%);
+  --gold: hsl(31, 63%, 43%);
+  --red: hsl(359, 87%, 30%);
+
+  // Variablennamen zum Beschreiben der Funktion
+  --background-color: var(--gradient-{0-30});
+  --text-color: var(--prussian-blue);
+  --heading-color: var(--poison-green);
+  --link-color: var(--imperial-red);
+  --active-link-color: var(--celadon-blue);
+
+  // https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web
+  @media (prefers-color-scheme: dark) {
+  }
+}

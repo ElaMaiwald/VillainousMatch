@@ -1,0 +1,11 @@
+@use '../globals' as *;
+
+.header {
+  &__headline {
+    text-align: center;
+    margin: 2vh 0;
+    color: var(--heading-color);
+    font-family: 'Germania One Regular', sans-serif;
+    letter-spacing: 0.4rem;
+  }
+}

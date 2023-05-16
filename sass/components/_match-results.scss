@@ -1,0 +1,52 @@
+@use '../globals' as *;
+
+.match-results {
+  &__layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__outer-box {
+    margin: 0 5vw 4vh;
+
+    &--many-players {
+      margin: 0 9vw 4vh;
+    }
+  }
+
+  &__text {
+    margin-top: 1vh;
+  }
+
+  &__headline {
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--heading-color);
+    font-family: 'Germania One Regular', sans-serif;
+    letter-spacing: 0.4rem;
+  }
+
+  &__player {
+    font-size: 1.5rem;
+    font-weight: 500;
+    &--1 {
+      color: var(--poison-green);
+    }
+    &--2 {
+      color: var(--purple);
+    }
+    &--3 {
+      color: var(--gold);
+    }
+    &--4 {
+      color: var(--red);
+    }
+  }
+
+  &__villain {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 600;
+  }
+}

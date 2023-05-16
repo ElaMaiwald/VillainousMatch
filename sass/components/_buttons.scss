@@ -1,0 +1,48 @@
+@use '../globals' as *;
+
+.button {
+  &__layout {
+    display: flex;
+    justify-content: center;
+    margin: 10vh 2vw 40vh 0;
+    cursor: pointer;
+  }
+  &__wrapper {
+    text-align: center;
+  }
+  &__match-button {
+    background-image: var(--gradient-11);
+    border-radius: 5px;
+    height: 10vh;
+    width: 400px;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    &:disabled {
+      background-image: var(--gradient-6);
+    }
+  }
+  &__error {
+    color: var(--red-8);
+    cursor: default;
+    max-width: 500px;
+    padding: 0 1rem;
+    font-weight: 600;
+  }
+  &__back {
+    &-layout {
+      margin: 8vh 0 20vh 2vw;
+    }
+    &-inner {
+      border: none;
+      cursor: pointer;
+      background-color: var(--pink-6);
+      padding: 10px;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+}

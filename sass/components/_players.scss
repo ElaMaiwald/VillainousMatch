@@ -1,0 +1,99 @@
+@use '../globals' as *;
+
+.players {
+  &__layout {
+    margin: 10vh 0 10vh;
+  }
+
+  &__select-layout {
+    display: flex;
+    justify-content: center;
+
+    & select {
+      background-color: white;
+      border-radius: 10px;
+      height: 7vh;
+      width: 25vw;
+      color: var(--teal-8);
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      appearance: none;
+
+      &:focus {
+        outline: 2px solid var(--teal-8);
+        outline-offset: 2px;
+      }
+
+      & option {
+        background-color: white;
+        border-radius: 10px;
+        font-size: 1.4rem;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__headline {
+    text-align: center;
+  }
+
+  &__arrow-down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-top: 8px dashed var(--teal-8);
+    border-right: 8px solid white;
+    border-left: 8px solid white;
+    position: absolute;
+    margin-top: 3.2vh;
+    margin-left: 19vw;
+  }
+
+  &__arrow-up {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-bottom: 10px dashed var(--teal-8);
+    border-right: 10px solid white;
+    border-left: 10px solid white;
+    position: absolute;
+    margin-top: 3.2vh;
+    margin-left: 19vw;
+  }
+
+  &__input-layout {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  &__input {
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+  }
+
+  &__label {
+    font-weight: 500;
+    &--player1 {
+      color: var(--poison-green);
+    }
+    &--player2 {
+      color: var(--purple);
+    }
+    &--player3 {
+      color: var(--gold);
+    }
+    &--player4 {
+      color: var(--red);
+    }
+  }
+}
